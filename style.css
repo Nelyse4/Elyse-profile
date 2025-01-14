@@ -1,0 +1,300 @@
+/*  Name: ELYSE NIYONAGIRA
+    file: style.css
+    Assignment 1
+    15/10/2024
+    This is a style sheet for index.html, resume.html, projects.html, and contact.html
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white; /* Set background to white */
+    color: #333; /* Default text color */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
+    min-height: 100vh; /* Ensure body takes full height */
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Place it behind other content */
+}
+
+.video-background video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+    z-index: 0; /* Place overlay below content */
+}
+
+header {
+    background: black; /* Set header background to white */
+    color: white; /* Text color */
+    padding: 15px 20px; /* Padding for header */
+    display: flex;
+    justify-content: space-between; /* Space items between left and right */
+    align-items: center; /* Center items vertically */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: relative; /* Ensure header is positioned correctly */
+    z-index: 1; /* Bring header above the video */
+}
+
+h1 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.8rem; /* Larger font size for the title */
+}
+
+nav {
+    display: flex;
+    align-items: center; /* Center nav items vertically */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0; /* Reset margin */
+}
+
+nav ul li {
+    margin: 0 10px; /* Margin for nav links */
+}
+
+nav ul li a {
+    color: whitesmoke; /* Link color */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Bold links for emphasis */
+    transition: color 0.3s; /* Smooth transition for hover */
+}
+
+nav ul li a:hover {
+    color: white; /* Hover effect color */
+}
+
+.social-icons {
+    display: flex; /* Flexbox for icons */
+    align-items: center; /* Center icons vertically */
+    margin-left: 0; /* No margin to eliminate space */
+}
+
+.social-icons img {
+    width: 25px; /* Icon size */
+    margin: 0 5px; /* Space between icons */
+    transition: transform 0.3s; /* Smooth zoom effect */
+}
+
+.social-icons img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    max-width: 800px; /* Limit main content width */
+    margin: 20px auto; /* Center the content */
+    flex: 1; /* Allow main to grow and fill available space */
+    position: relative; /* Ensure main is positioned correctly */
+    z-index: 1; /* Bring main content above the video */
+}
+
+.intro {
+    color: #fff;
+    display: flex;
+    flex-direction: row; /* Side by side layout */
+    justify-content: space-between; /* Space items */
+}
+
+.profile-picture {
+    border-radius: 50%; /* Circular image */
+    width: 350px; /* Set a smaller width */
+    height: 400px; /* Set height to match width for a perfect circle */
+    object-fit: cover; /* Maintain aspect ratio and cover the area */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.bio {
+    max-width: 600px; /* Limit width for readability */
+    line-height: 1.6; /* Improved line height for readability */
+    margin-left: 20%;
+}
+
+footer {
+    background: black; /* Footer color */
+    color: #fff; /* Footer text color */
+    text-align: center;
+    padding: 15px 0; /* Padding for footer */
+    position: relative; /* Fix position to the bottom */
+    bottom: 0; /* Positions it at the bottom */
+    width: 100%; /* Full width */
+    margin-top: 20px;
+}
+/* Main Container for Resume */
+.resume-container {
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    max-width: 800px; /* Limit the maximum width */
+    margin: 20px auto; /* Center the container */
+    padding: 20px; /* Padding around the container */
+    background-color: #ffffff; /* White background for the resume */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Resume Section Styles */
+.resume-section {
+    margin: 20px 0; /* Space between sections */
+    padding: 15px; /* Padding around sections */
+}
+
+.resume-section h2 {
+    color: darkblue; /* Section title color */
+    border-bottom: 2px solid darkblue; /* Underline for section titles */
+    padding-bottom: 5px; /* Space below title */
+    margin-bottom: 10px; /* Space below titles */
+}
+
+.resume-section ul,
+.resume-section ol {
+    margin-left: 20px; /* Indent the list */
+}
+
+.resume-section li {
+    margin: 8px 0; /* Space between list items */
+}
+.skills-list {
+    display: flex; /* Use flexbox for horizontal alignment */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.skills-list li {
+    display: flex; /* Use flexbox to align icon and text */
+    align-items: center; /* Center items vertically */
+    margin: 10px 15px; /* Space between items */
+}
+
+.skill-icon {
+    width: 64px; /* Set a uniform width for icons */
+    height: 64px; /* Set a uniform height for icons */
+    margin-right: 8px; /* Space between icon and text */
+}
+/* Project Container */
+.project-container {
+    display: flex; /* Flexbox for project cards */
+    flex-direction: column; /* Stack cards vertically */
+    gap: 20px; /* Space between project cards */
+}
+
+/* Project Card Styles */
+.project-card {
+    background: #ffffff; /* White background for cards */
+    padding: 15px; /* Padding inside cards */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.project-card h3 {
+    margin: 0 0 10px 0; /* Space below heading */
+}
+
+.project-image {
+    max-width: 100%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 10px; /* Space above image */
+}
+/* Email Link Styles */
+.email {
+    font-weight: bold; /* Make email text bold */
+    font-size: 1.9em; /* Larger font size for email */
+    color: black; /* Pink color for email */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s, transform 0.3s; /* Smooth transition for effects */
+}
+
+.email:hover {
+    color: darkblue; /* Darker pink shade on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+/* Responsive styles */
+
+/* Mobile styles */
+@media (max-width: 600px) {
+    header {
+        padding: 15px 0;  /* Adjust header padding */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation links */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Vertical spacing for links */
+    }
+
+    main {
+        padding: 15px; /* Adjust main padding */
+    }
+
+    footer {
+        padding: 15px 0; /* Adjust footer padding */
+    }
+
+    button {
+        padding: 12px; /* Larger button padding */
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 601px) and (max-width: 768px) {
+    nav ul {
+        flex-direction: row; /* Horizontal layout */
+    }
+
+    nav ul li {
+        margin: 0 10px; /* Adjust spacing */
+    }
+
+    main {
+        padding: 20px; /* Standard padding */
+    }
+
+    footer {
+        padding: 10px 0; /* Standard footer padding */
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1025px) {
+    nav ul {
+        justify-content: center; /* Space out links */
+    }
+
+    main {
+        padding: 40px; /* More padding for larger screens */
+    }
+
+    footer {
+        padding: 20px 0; /* More padding for larger screens */
+    }
+}
