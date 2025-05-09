@@ -40,30 +40,43 @@
     </header>
     
     <main>
-        <div class="project-container">
-            <div class="project-card">
-                <h3>1. MyHealthData Application</h3>
-                <p>This project helps to track and categorize patients' data, recording essential information. This tool assists in keeping patient data, determining BMI, maximum heart rate, and calculating patient age in days. It provides a basic health description of the patient.</p>
-                <img src="images/Project1.png" alt="MyHealthData displays all the input data of the patient" class="project-image">
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item">
+                    <h3>1. PTFMS App</h3>
+                    <p>This project the Public Transit app helps users find optimal routes and schedules for public transportation using real-time data</p>
+                    <img src="images/ptfms.png" alt="PTFMS app functionalities" class="project-image">
+                </div>
+
+                <div class="carousel-item">
+                    <h3>2. MyHealthData Application</h3>
+                    <p>This project helps to track and categorize patients' data, recording essential information.</p>
+                    <img src="images/Project1.png" alt="MyHealthData displays all the input data of the patient" class="project-image">
+                </div>
+
+                <div class="carousel-item">
+                    <h3>3. Valid Baggage Application</h3>
+                    <p>An app that allows valid baggage at the airport to proceed for being carried. If it exceeds the required weight and size, there is an additional fee.</p>
+                    <img src="images/Project2.png" alt="Valid baggage displays the bag size and weight and surcharge if there is any" class="project-image">
+                </div>
+
+                <div class="carousel-item">
+                    <h3>4. Book catalogue system</h3>
+                    <p>A responsive website that allows the book enthusiasts to have a well-organized book system. Users can retrieve, add, remove books, and even leave reviews.</p>
+                    <img src="images/Project3.png" alt="Book Management system landing page" class="project-image">
+                </div>
             </div>
 
-            <div class="project-card">
-                <h3>2. Valid Baggage Application</h3>
-                <p>An app that allows valid baggage at the airport to proceed for being carried. If it exceeds the required weight and size, there is an additional fee. Once paid, the bag proceeds. The app helps the user to know the weight and size of valid baggage.</p>
-                <img src="images/Project2.png" alt="Valid baggage displays the bag size and weight and surcharge if there is any" class="project-image">
-            </div>
-
-            <div class="project-card">
-                <h3>3. Book catalogue system</h3>
-                <p>A responsive website that allows the book enthusiats to have a well organised book system. It helps the user to retrieve books, add new books, remove existing books, edit a book information as well give a review of the book.</p>
-                <img src="images/Project3.png" alt="Personal portfolio home page with a passport picture size." class="project-image">
-            </div>
+            <!-- Carousel Controls -->
+            <button class="carousel-btn prev" onclick="moveSlide(-1)">❮</button>
+            <button class="carousel-btn next" onclick="moveSlide(1)">❯</button>
         </div>
     </main>
 
     <footer>
         <p>&copy; 2025 Elyse Niyonagira. All rights reserved.</p>
     </footer>
+     <script src="script.js"></script>
 </body>
 
 </html>
