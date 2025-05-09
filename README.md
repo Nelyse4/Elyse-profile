@@ -9,7 +9,8 @@ A simple HTML-based personal portfolio site showcasing my background, projects, 
 
 ## Technologies
 - HTML
-- CSS
+- CSs
+- JavaScript
 
 ## Status
 Complete
