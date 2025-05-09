@@ -223,6 +223,44 @@ footer {
     height: auto; /* Maintain aspect ratio */
     margin-top: 10px; /* Space above image */
 }
+.carousel-container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+}
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 100;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
 /* Email Link Styles */
 .email {
     font-weight: bold; /* Make email text bold */
