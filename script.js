@@ -22,4 +22,8 @@ function moveSlide(direction) {
 
     // Update the carousel display
     document.querySelector(".carousel").style.transform = `translateX(-${currentSlide * 100}%)`;
+     
+    // updating footer
+    document.getElementById("year").textContent = new Date().getFullYear();
 }
+
